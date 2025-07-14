@@ -4,6 +4,8 @@
     url: https://nvidia.github.io/libnvidia-container/gpgkey
     state: present
     keyring: /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
+  environment:
+    http_proxy: http://proxy.nioint.com:8080
 
 - name: Add NVIDIA container toolkit repository
   become: true
